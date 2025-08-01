@@ -78,6 +78,7 @@ parallax
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*Nosotros parralax*/
@@ -152,7 +153,9 @@ parallax
 .div-nosotros-parallax {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+
   /* The image used */
   background-image: url("../assets/images/Captura\ de\ pantalla\ 2025-07-31\ 203713.png");
   /* Set a specific height */
@@ -284,7 +287,7 @@ p {
 
   .container-ubi {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start;  
   }
 
   .map iframe {
