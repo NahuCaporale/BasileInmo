@@ -13,11 +13,14 @@ html {
 body {
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /*nav*/
 .navbar {
-  background-color: rgba(49, 49, 51, 0.6); /* Negro con 90% de opacidad */
+  background-color: rgba(49, 49, 51, 0.6);
+  /* Negro con 90% de opacidad */
   min-height: 80px;
   padding: 0.5rem 1rem;
 }
@@ -281,13 +284,17 @@ p {
 
 }
 
+img,
+iframe {
+  max-width: 100%;
+}
 
 @media (min-width: 768px) {
 
 
   .container-ubi {
     flex-direction: row;
-    align-items: flex-start;  
+    align-items: flex-start;
   }
 
   .map iframe {
