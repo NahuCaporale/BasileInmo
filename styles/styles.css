@@ -154,7 +154,7 @@ servicios
   width: fit-content;
   padding: 5rem;
   margin-top: 0;
-  background-image: url(/assets/images/footer-bg.a2c5258268ca128a.jpg);
+  background-image: url("/assets/images/footer-bg.a2c5258268ca128a.jpg");
   color: #f6f6f6;
 }
 
@@ -191,7 +191,7 @@ ubicacion
 */
 #ubicacion {
   height: fit-content;
-  background-image: url(/assets/images/footer-bg.a2c5258268ca128a.jpg);
+  background-image: url("/assets/images/footer-bg.a2c5258268ca128a.jpg");
   padding: 4rem;
 }
 
@@ -277,7 +277,7 @@ iframe {
   justify-content: center;
   width: 100vw;
   height: 80vh;
-  background-image: url("https://inmobiliariabasile.com.ar/api/assets/imagendetalle/10/2_sliderbasile.webp");
+  background-image: url("/assets/images/towers.webp");
   background-color: #00000080;
   background-blend-mode: overlay;
 }
