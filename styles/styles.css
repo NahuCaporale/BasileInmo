@@ -12,7 +12,8 @@ html {
 
 body {
   overflow-x: hidden;
-
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -204,7 +205,8 @@ ubicacion
 .container-ubi {
   display: flex;
   justify-content: center;
-  align-items: center;  /* Añadido para centrar verticalmente */
+  align-items: center;
+  /* Añadido para centrar verticalmente */
 }
 
 .map iframe {
