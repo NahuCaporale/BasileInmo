@@ -7,9 +7,12 @@
   font-family: Montserrat, sans-serif;
 
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -17,21 +20,7 @@ body {
   max-width: 100%;
 }
 
-.container,
-.container-fluid {
-  width: 100%;
-  max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.navbar-collapse {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
+/*NAV*/
 .navbar-style {
   max-width: 60%;
 }
@@ -44,10 +33,10 @@ body {
 }
 
 .navbar-nav {
+
   align-items: center;
   /* Centra verticalmente los elementos del menú */
 }
-
 
 
 /* Ajusta el espaciado de los enlaces */
@@ -81,11 +70,9 @@ body {
 
 .entire-logo img {
   min-width: 100px;
-  /* Ancho mínimo de la imagen */
   height: auto;
-  /* Mantiene la proporción de aspecto */
   object-fit: contain;
-  /* Asegura que la imagen se ajuste manteniendo su relación de aspecto */
+  /* img ajusta manteniendo su relación de aspecto */
 }
 
 
@@ -120,6 +107,23 @@ parallax
   color: #f6f6f6;
 }
 
+.div-nosotros-parallax {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  /* The image used */
+  background-image: url("https://cdn.wallpapersafari.com/43/5/wJucxa.jpg");
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box modeling */
+  margin: 0;
+  overflow-x: hidden;
+}
 
 /*size icons*/
 .size {
@@ -150,33 +154,17 @@ parallax
   }
 }
 
-.div-nosotros-parallax {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  /* The image used */
-  background-image: url("https://cdn.wallpapersafari.com/43/5/wJucxa.jpg");
-  /* Set a specific height */
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* box modeling */
-  margin: 0;
-  overflow-x: hidden;
-}
+
 
 /*
-servicios
-
+services
 */
-#servicios {
+#services {
   display: flex;
+  font-size: auto;
+  min-height: auto;
   flex-direction: column;
-  height: max-content;
-  width: fit-content;
+  width: 100%;
   padding: 2rem 15px;
   margin: 0;
   background-image: url("../assets/images/footer-bg.a2c5258268ca128a.jpg");
@@ -189,8 +177,8 @@ servicios
 }
 
 .serv-module {
-  margin-bottom: 3rem;
-  /* Espacio debajo del h3 */
+  margin-bottom: 5rem;
+  /* space below  h3 */
 }
 
 
@@ -213,51 +201,103 @@ h3 {
 }
 
 /*
-ubicacion
+Choose
 */
-#ubicacion {
+
+.choose {
+  color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/images/towers.webp");
+  background-color: #00000080;
+  background-blend-mode: overlay;
+  box-sizing: border-box;
+
+}
+
+.container-choose {
+  min-height: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 3rem;
+  border-radius: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #00000080;
+  background-blend-mode: overlay;
+}
+
+
+.abstract-choose {
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.container-choose h2 {
+  margin-bottom: 2rem;
+}
+
+
+
+/*
+Contact
+*/
+#contact {
   height: fit-content;
   background-image: url("../assets/images/footer-bg.a2c5258268ca128a.jpg");
   padding: 4rem;
 }
 
-.h1-ubicacion {
+.h1-contact {
   color: #f6f6f6;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.container-ubi {
+.container-location {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* Añadido para centrar verticalmente */
 }
 
 .map iframe {
   border-radius: 1rem;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  margin: 0;
 }
 
 .consulta-container {
-  margin-top: 3rem;
+  margin: 0px;
+  width: fit-content;
   padding: 1rem;
-  border-radius: 0 1rem 1rem 0rem;
+  border-radius: 0rem 0rem 1rem 1rem;
   background-color: #202020;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.location {
+.socials {
   display: flex;
   align-items: center;
 }
 
-.location p {
+.socials p {
   font-size: 14px;
   margin: 0;
   margin-left: 1rem;
@@ -296,44 +336,6 @@ iframe {
   max-width: 100%;
 }
 
-.choose {
-  color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 100%;
-  height: 80vh;
-  background-image: url("../assets/images/towers.webp");
-  background-color: #00000080;
-  background-blend-mode: overlay;
-}
-
-.abstract-choose {
-  text-align: center;
-  text-wrap: wrap;
-}
-
-.container-choose {
-  max-width: 60%;
-  max-height: 90%;
-  height: max-content;
-  padding: 3rem;
-  border-radius: 1rem;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #00000080;
-  background-blend-mode: overlay;
-}
-
-.container-choose h2 {
-  margin-bottom: 2rem;
-}
-
-
 
 
 
@@ -358,9 +360,11 @@ iframe {
 
   .nav-item {
     justify-content: center;
-    width: 100%;
   }
 
+  .consulta-container {
+    margin-top: 0rem;
+  }
 }
 
 /* Mobile Large */
@@ -377,7 +381,7 @@ iframe {
 }
 
 @media (min-width: 768px) {
-  .container-ubi {
+  .container-location {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -393,10 +397,19 @@ iframe {
     background-attachment: scroll;
   }
 
+  .consulta-container {
+    margin-top: 5rem;
+
+  }
 }
 
-@media (max-width:1920px)and (min-width:860px) {
+@media (max-width:1920px)and (min-width:768px) {
+
   /*Underline on text*/
+  .navbar {
+    height: 11%;
+
+  }
 
   .vinc-parallax::after {
     content: '';
@@ -414,6 +427,10 @@ iframe {
     width: 94%;
   }
 
+  .consulta-container {
+    margin-top: calc(60px);
+    border-radius: 0rem 1rem 1rem 0rem;
+  }
 }
 
 /* Estilos para el menú colapsado en móviles */
@@ -445,7 +462,7 @@ iframe {
 }
 
 @media (max-width: 300px) {
-  #servicios {
+  #services {
     padding: 1.5rem 0.5rem;
   }
 
@@ -464,16 +481,16 @@ iframe {
     margin-bottom: 0.5rem;
   }
 
-  #ubicacion {
+  #contact {
     padding: 1.5rem 0.5rem;
   }
 
-  .container-ubi {
+  .container-location {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .location {
+  .socials {
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
@@ -481,7 +498,7 @@ iframe {
 
   .consulta-container {
     align-items: center;
-    margin-left: 0;
+    margin-top: 0rem;
   }
 
   /* Ajustes para la sección choose */
