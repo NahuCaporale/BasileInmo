@@ -133,7 +133,7 @@ parallax
   height: 100vh;
   background-attachment: fixed;
   /* The image used */
-  background-image: url("https://cdn.wallpapersafari.com/43/5/wJucxa.jpg");
+  background-image: url("https://www.bolivar.gob.ar/imagenes/20190328144028-san-carlos-de-bolvar.jpg");
   /* Set a specific height */
   /* Create the parallax scrolling effect */
   background-position: center;
@@ -238,7 +238,8 @@ Choose
   min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/images/towers.webp");
+  background-image: url("https://www.bolivar.gob.ar/imagenes/20190321104830-.jpg");
+  background-position: center;
   background-color: #00000080;
   background-blend-mode: overlay;
   box-sizing: border-box;
@@ -354,7 +355,16 @@ Contact
   display: flex;
   justify-content: space-around;
 }
+.foot-vinc{
+  text-decoration: none;
+  color: #f6f6f6;
+  border-bottom: 2px solid transparent;
+}
+.foot-vinc:hover{
+  transition: 0.8s ease;
+  border-color: #fae3e1;
 
+}
 img,
 iframe {
   max-width: 100%;
