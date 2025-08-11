@@ -537,6 +537,7 @@ iframe {
 
   .foot-vinc:hover {
     border-color: #fae3e1;
+    transition: 0.8s ease;
   }
 
   
